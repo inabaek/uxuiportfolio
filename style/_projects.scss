@@ -1,0 +1,165 @@
+/* project description */
+.project-description {
+  width: 90%;
+  margin: auto;
+  background-color: rgba(255, 57, 57, 0.158);
+  border-radius: 10rem;
+  margin-top: 5rem;
+  padding: 10rem 0 10rem 0;
+  text-align: center;
+  .description-text {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: $text;
+      text-align: justify;
+    }
+  }
+}
+
+/* iframe */
+.iframe {
+  width: 90%;
+  margin: 5rem auto 0 auto;
+  @include flex(center, center, column);
+  iframe {
+    border: 3px solid rgba(255, 57, 57, 0.158);
+    width: 60%;
+    height: 700px;
+    background: white;
+    border-radius: 10rem;
+  }
+  button {
+    margin-top: 2rem;
+    padding: 2rem 5rem;
+    border: none;
+    border-radius: 2rem;
+    background: rgba(255, 57, 57, 0.158);
+    color: $red-text;
+    font-size: $text;
+    cursor: pointer;
+  }
+  button:hover {
+    background: rgba(255, 57, 57, 0.096);
+  }
+}
+
+/* client page */
+.shina-page {
+  width: 90%;
+  margin: 5rem auto 5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 10rem;
+  flex-direction: row-reverse;
+}
+.shina-img {
+  flex: 1 2 25rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.persona-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 2 1 40rem;
+  background: rgba(255, 57, 57, 0.158);
+  padding: 7rem;
+  position: relative;
+  h1 {
+    padding-top: 90px;
+    font-size: $header1;
+
+    letter-spacing: 1.2px;
+  }
+  h2 {
+    font-size: $text;
+    margin-bottom: 3rem;
+    color: #f13d3d;
+    text-decoration: underline;
+  }
+  p {
+    font-size: $text;
+    line-height: 1.4;
+    text-align: justify;
+  }
+}
+
+/* User flow map */
+.user-flow-map {
+  background: rgba(255, 57, 57, 0.158);
+  border-radius: 10rem;
+
+  flex-wrap: wrap;
+  width: 90%;
+
+  margin: 5rem auto 0 auto;
+  overflow: hidden;
+  .initial-user-flow {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    h1 {
+      margin: 3rem 0 2rem 0;
+      font-size: $header1;
+      text-align: center;
+    }
+    h2 {
+      font-size: $header3;
+      margin-top: 3rem;
+    }
+    .task-flow {
+      background: khaki;
+      border-radius: 7rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5rem;
+      h3 {
+        font-size: $text;
+        margin-top: 2rem;
+        background: #f13d3d;
+        color: khaki;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 2rem;
+      }
+    }
+
+    .option1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 1rem 0 5rem 0;
+
+      h2 {
+        font-size: $small;
+        margin: 1rem 0 1rem 0;
+        border: 1px #f13d3d solid;
+        padding: 2rem;
+        border-radius: 3rem;
+      }
+      .arrow {
+        border: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1113px) {
+  .persona-text {
+    padding: 3rem 3rem 3rem 5rem;
+    h1 {
+      font-size: $header2;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}

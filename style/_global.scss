@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
   font-family: myriad-pro, sans-serif;
   background-color: #f8ece6;
-  color: #f13d3d;
+  color: $red-text;
   overflow-wrap: break-word;
 }
 
@@ -27,6 +27,7 @@ a {
   position: sticky;
   top: 0;
   background: #f8ece6;
+  z-index: 2;
 }
 nav {
   width: 90%;
@@ -40,7 +41,7 @@ nav {
   flex: 4 1 20rem;
   a {
     font-size: $header2;
-    color: #f13d3d;
+    color: $red-text;
   }
 }
 .nav-links {
@@ -63,7 +64,6 @@ nav {
   margin: auto;
 }
 .about-hero {
-  margin-bottom: 20rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -84,7 +84,7 @@ nav {
 .about-text {
   flex: 1 2 48rem;
   @include flex(center, center, column);
-  text-align: center;
+  text-align: justify;
   padding: 3rem 3rem 3rem 3rem;
   h1 {
     font-size: $big;
@@ -98,10 +98,10 @@ nav {
 /* Gallery */
 .projects {
   width: 90%;
-  margin: auto;
+  margin: 5rem auto 0 auto;
   background: #f800001a;
   border-radius: 10rem;
-  margin-bottom: 10rem;
+
   h1 {
     text-align: center;
     padding-top: 10rem;
@@ -126,6 +126,7 @@ nav {
 
 /* Footer */
 footer {
+  margin-top: 5rem;
   display: flex;
   padding: 3rem 5%;
   flex-wrap: wrap;
