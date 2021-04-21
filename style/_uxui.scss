@@ -1,21 +1,23 @@
-/* project description */
-.project-description {
+/* project summery1 */
+.project-summery1 {
   width: 90%;
   margin: auto;
-  background-color: rgba(255, 57, 57, 0.158);
+  background: rgba(255, 57, 57, 0.158);
   border-radius: 5rem;
-  margin-top: 5rem;
-  padding: 10rem 0 10rem 0;
-  text-align: center;
-  .description-text {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+  .project-summery1-box {
+    @include flex(center, center, column);
+    padding: 5rem 5rem;
+    margin-top: 5rem;
+    h1 {
+      font-size: $big;
+    }
+    h2 {
+      font-size: $header4;
+      margin-bottom: 3rem;
+    }
     p {
-      font-size: $text;
-      text-align: justify;
+      font-size: 18px;
     }
   }
 }
@@ -47,48 +49,73 @@
   }
 }
 
-/* client page */
-.shina-page {
-  width: 90%;
-  margin: 5rem auto 5rem auto;
+/* project-summery2 */
+.summery-box {
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
-  border-radius: 5rem;
-  flex-direction: row-reverse;
+  @include flex(center, flex-start, row);
 }
-.shina-img {
-  flex: 1 2 25rem;
+.overview {
+  flex: 1 1 50rem;
+}
+.accomplishment {
+  flex: 1 1 50rem;
+}
+.project-summery2 {
+  width: 90%;
+  margin: 5rem auto 0 auto;
+  border-radius: 5rem;
+  background: rgba(255, 57, 57, 0.158);
+  .project-summery2-box {
+    @include flex(center, flex-start, column);
+    padding: 5rem 5rem;
+    margin-top: 5rem;
+    h1 {
+      font-size: $big;
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: $text;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+  }
+}
+
+/* analysis */
+.analysis {
+  @include flex(center, center, column);
+  width: 90%;
+  margin: 5rem auto 0 auto;
+  padding-top: 5rem;
+  border-radius: 5rem;
+  background: rgba(255, 57, 57, 0.158);
+  overflow: hidden;
+  h1 {
+    font-size: $big;
+  }
+  h2 {
+    font-size: $header2;
+  }
+  .analysis-container {
+    @include flex(center, center, row);
+    flex-wrap: wrap;
+  }
+  .img-box {
+    width: 50%;
+    flex: 2 1 40rem;
+  }
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-}
-.persona-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex: 2 1 40rem;
-  background: rgba(255, 57, 57, 0.158);
-  padding: 7rem;
-  position: relative;
-  h1 {
-    padding-top: 90px;
-    font-size: $header1;
-
-    letter-spacing: 1.2px;
-  }
-  h2 {
-    font-size: $text;
-    margin-bottom: 3rem;
-    color: #f13d3d;
-    text-decoration: underline;
-  }
-  p {
-    font-size: $text;
-    line-height: 1.4;
-    text-align: justify;
+  .analysis-text-box {
+    flex: 1 1 40rem;
   }
 }
 
