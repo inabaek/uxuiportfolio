@@ -1,0 +1,77 @@
+.idea1 {
+  width: 90%;
+  margin: auto;
+}
+.whatisflashideas {
+  margin-bottom: 10rem;
+  @include flex(center, center, column);
+  h1 {
+    text-align: justify;
+    font-size: $big;
+    margin: 20rem 0 5rem 0;
+  }
+  p {
+    text-align: justify;
+    font-size: $text;
+  }
+}
+.idea1-1 {
+  @include flex(center, center, column);
+  background: $blue-opacity;
+  width: 100%;
+  padding: 10rem 2rem 10rem 2rem;
+  margin-top: 20rem;
+  border-radius: 5rem;
+  text-align: justify;
+  h1 {
+    font-size: $big;
+    padding-bottom: 1rem;
+  }
+  p {
+    font-size: $text;
+  }
+  .warning {
+    font-size: $small;
+    margin-top: 1rem;
+  }
+  video {
+    padding: 5rem 0rem 10rem 0rem;
+    width: 70%;
+  }
+}
+.idea1-description {
+  text-align: justify;
+  width: 80%;
+  h2 {
+    font-size: $header3;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  .reserch-data {
+    margin-bottom: 0;
+  }
+  h3 {
+    margin-bottom: 1rem;
+    font-weight: lighter;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .idea1-1 video {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .whatisflashideas h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .idea1-1 h1 {
+    font-size: 4rem;
+  }
+}
