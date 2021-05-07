@@ -17,6 +17,11 @@ html {
   overflow-wrap: break-word;
 }
 
+body {
+  -webkit-animation: opening 1.1s ease-in-out;
+          animation: opening 1.1s ease-in-out;
+}
+
 ul {
   list-style: none;
 }
@@ -419,6 +424,24 @@ footer h4 {
 }
 
 /* -------------------------------------------------------------------- */
+/* ANIMATIONS */
+@-webkit-keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* project description */
 .project-description {
   width: 90%;
