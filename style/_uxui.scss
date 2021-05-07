@@ -86,8 +86,45 @@
   }
 }
 
-/* analysis */
-.analysis {
+/* ux process */
+hr {
+  background-color: $blue-opacity;
+  width: 95%;
+  margin: auto;
+  height: 0.3rem;
+  border: none;
+}
+/* define */
+.define {
+  @include flex(center, center, column);
+  width: 90%;
+  margin: 5rem auto 5rem auto;
+  padding: 5rem 0rem;
+  border-radius: 5rem;
+  background: $blue-opacity;
+  overflow: hidden;
+  h1 {
+    font-size: $big;
+    margin-bottom: 5rem;
+  }
+  h2 {
+    font-size: $header2;
+    align-self: flex-start;
+    margin-left: 5rem;
+    width: 95%;
+    margin: 0 auto 0.5rem auto;
+  }
+  p {
+    width: 95%;
+    margin: 0.5rem auto 0 auto;
+    font-size: $text;
+    align-self: flex-start;
+    text-align: justify;
+  }
+}
+
+/* discover */
+.discover {
   @include flex(center, center, column);
   width: 90%;
   margin: 5rem auto 0 auto;
@@ -96,26 +133,44 @@
   background: $blue-opacity;
   overflow: hidden;
   h1 {
+    margin: 0 auto 5rem auto;
     font-size: $big;
   }
   h2 {
-    font-size: $header2;
+    font-size: $header1;
+    align-self: flex-start;
+    width: 95%;
+    margin: 0 auto;
   }
-  .analysis-container {
-    @include flex(center, center, row);
+  .discover-container {
+    @include flex(center, center, column);
     flex-wrap: wrap;
   }
   .img-box {
-    width: 50%;
-    flex: 2 1 40rem;
+    width: 100%;
+  }
+  .persona1 {
+    margin-bottom: 2rem;
+  }
+  .persona2 {
+    margin-bottom: 2rem;
   }
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .analysis-text-box {
-    flex: 1 1 40rem;
+  .hmw {
+    margin: 5rem;
+    text-align: justify;
+    h1 {
+      margin-bottom: 2rem;
+      font-size: $header1;
+    }
+    p {
+      font-size: $text;
+      margin-bottom: 2rem;
+    }
   }
 }
 
