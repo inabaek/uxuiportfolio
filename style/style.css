@@ -685,17 +685,21 @@ footer h4 {
   background: #46629e1e;
 }
 
-/* project-summery2 */
-.summery-box {
+/* overview */
+.overview {
+  background: #46629e1e;
+  border-radius: 5rem;
+  width: 90%;
+  margin: 5rem auto 0 auto;
+  padding: 5rem 0;
+}
+
+.overview-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -703,59 +707,73 @@ footer h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.overview {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50rem;
-          flex: 1 1 50rem;
+.box {
+  margin: 2rem;
 }
 
-.accomplishment {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50rem;
-          flex: 1 1 50rem;
+.box h1 {
+  font-size: 2.5rem;
 }
 
-.project-summery2 {
+.box h2 {
+  font-size: 18px;
+}
+
+.below-boxes {
   width: 90%;
   margin: 5rem auto 0 auto;
-  border-radius: 5rem;
-  background: #46629e1e;
-}
-
-.project-summery2 .project-summery2-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5rem 5rem;
-  margin-top: 5rem;
 }
 
-.project-summery2 .project-summery2-box h1 {
-  font-size: 5.5rem;
-  margin-bottom: 3rem;
+.below-boxes h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
-.project-summery2 .project-summery2-box h2 {
+.below-boxes p {
   font-size: 2.3rem;
+  text-align: justify;
+  width: 80%;
+  margin: auto;
 }
 
-.project-summery2 .project-summery2-box p {
-  font-size: 18px;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  text-align: justify;
+.below-boxes .iframe-overview {
+  width: 90%;
+  margin: 5rem auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.below-boxes .iframe-overview iframe {
+  border-radius: 5rem;
 }
 
 /* ux process */
@@ -811,6 +829,10 @@ hr {
   -ms-flex-item-align: start;
       align-self: flex-start;
   text-align: justify;
+}
+
+.social-media-giphy {
+  pointer-events: none;
 }
 
 /* discover */
