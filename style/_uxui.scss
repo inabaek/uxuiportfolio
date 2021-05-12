@@ -1,9 +1,8 @@
 /* project summery1 */
 .project-summery1 {
-  width: 90%;
+  width: 100%;
   margin: auto;
   background: $blue-opacity;
-  border-radius: 5rem;
 
   .project-summery1-box {
     @include flex(center, center, column);
@@ -25,7 +24,7 @@
 /* iframe */
 .iframe {
   width: 90%;
-  margin: 5rem auto 0 auto;
+  margin: 10rem auto 10rem auto;
   @include flex(center, center, column);
   iframe {
     border: 3px solid #46629e1e;
@@ -51,18 +50,17 @@
 
 /* overview */
 .overview {
-  background: $blue-opacity;
-  border-radius: 5rem;
-  width: 90%;
+  width: 80%;
   margin: 5rem auto 0 auto;
   padding: 5rem 0;
 }
 .overview-container {
-  @include flex(space-around, flex-start, row);
+  @include flex(space-between, flex-start, row);
   flex-wrap: wrap;
+  margin: 10rem auto 5rem auto;
 }
 .box {
-  margin: 2rem;
+  margin: 1rem;
   h1 {
     font-size: $header4;
   }
@@ -71,64 +69,100 @@
   }
 }
 .below-boxes {
-  width: 90%;
-  margin: 5rem auto 0 auto;
-  @include flex(center, center, column);
-
+  width: 70%;
+  margin: auto;
   h3 {
     font-size: $header4;
-    margin-bottom: 2rem;
+    text-align: center;
+    margin: 3rem 0;
   }
   p {
+    @include flex(center, center, column);
     font-size: $text;
     text-align: justify;
-    width: 80%;
-    margin: auto;
   }
   .iframe-overview {
-    width: 90%;
-    margin: 5rem auto 0 auto;
     @include flex(space-around, center, row);
     flex-wrap: wrap;
-    iframe {
-      border-radius: 5rem;
+    .gif {
+      @include flex(center, center, column);
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: $small;
+      text-align: justify;
+      margin-bottom: 3rem;
+    }
+    .introduction {
+      p {
+        font-size: $text;
+      }
     }
   }
 }
 /* ux process */
 hr {
   background-color: $blue-opacity;
-  width: 95%;
+  width: 100%;
   margin: auto;
   height: 0.3rem;
   border: none;
 }
+
+/* problem statement */
+.problem-statement {
+  width: 100%;
+  margin: auto;
+  background: $blue-opacity;
+  padding: 10rem 0;
+  .problem-statement-container {
+    width: 70%;
+    margin: auto;
+    h1 {
+      text-align: center;
+      font-size: $big;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: $header4;
+      text-align: justify;
+    }
+  }
+}
+
 /* define */
 .define {
-  @include flex(center, center, column);
-  width: 90%;
-  margin: 5rem auto 5rem auto;
-  padding: 5rem 0rem;
-  border-radius: 5rem;
-  background: $blue-opacity;
-  overflow: hidden;
-  h1 {
-    font-size: $big;
-    margin-bottom: 5rem;
-  }
-  h2 {
-    font-size: $header2;
-    align-self: flex-start;
-    margin-left: 5rem;
-    width: 95%;
-    margin: 0 auto 0.5rem auto;
-  }
-  p {
-    width: 95%;
-    margin: 0.5rem auto 0 auto;
-    font-size: $text;
-    align-self: flex-start;
-    text-align: justify;
+  width: 100%;
+  margin: auto;
+
+  .define-container {
+    @include flex(center, center, column);
+    width: 70%;
+    margin: 5rem auto 5rem auto;
+    padding: 5rem 0rem;
+    overflow: hidden;
+    h1 {
+      font-size: $big;
+      margin-bottom: 5rem;
+    }
+    h2 {
+      font-size: $header2;
+      align-self: flex-start;
+      margin: 0 auto 0.5rem auto;
+    }
+    p {
+      margin: 0.5rem auto 0 auto;
+      font-size: $text;
+      align-self: flex-start;
+      text-align: justify;
+    }
+    .define-box {
+      margin-bottom: 3rem;
+    }
   }
 }
 
@@ -137,13 +171,18 @@ hr {
 }
 /* discover */
 .discover {
-  @include flex(center, center, column);
-  width: 90%;
+  text-align: center;
+  width: 100%;
   margin: 5rem auto 0 auto;
   padding-top: 5rem;
-  border-radius: 5rem;
   background: $blue-opacity;
-  overflow: hidden;
+  .discover-container {
+    width: 80%;
+    margin: auto;
+    @include flex(center, center, column);
+    overflow: hidden;
+  }
+
   h1 {
     margin: 0 auto 5rem auto;
     font-size: $big;
@@ -151,8 +190,6 @@ hr {
   h2 {
     font-size: $header1;
     align-self: flex-start;
-    width: 95%;
-    margin: 0 auto;
   }
   .discover-container {
     @include flex(center, center, column);
