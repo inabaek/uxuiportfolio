@@ -146,7 +146,7 @@ hr {
     padding: 5rem 0rem;
     overflow: hidden;
     h1 {
-      font-size: $big;
+      font-size: 10rem;
       margin-bottom: 5rem;
     }
     h2 {
@@ -171,7 +171,6 @@ hr {
 }
 /* discover */
 .discover {
-  text-align: center;
   width: 100%;
   margin: 5rem auto 0 auto;
   padding-top: 5rem;
@@ -179,18 +178,83 @@ hr {
   .discover-container {
     width: 80%;
     margin: auto;
-    @include flex(center, center, column);
+
     overflow: hidden;
   }
 
-  h1 {
+  .discover-heading {
     margin: 0 auto 5rem auto;
-    font-size: $big;
+    font-size: 10rem;
+    text-align: center;
   }
-  h2 {
-    font-size: $header1;
-    align-self: flex-start;
+  /* discover - competitor research */
+  .competitor-research {
+    @include flex(center, center, row);
+    margin-top: 10rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5rem auto;
+    .competitor-img {
+      img {
+        width: 40%;
+        object-fit: cover;
+      }
+      @include flex(center, center, column);
+      flex: 1 1 50rem;
+    }
+    .competitor-text {
+      @include flex(center, flex-start, column);
+      flex: 2 1 40rem;
+      h1 {
+        font-size: $big;
+        margin-bottom: 3rem;
+      }
+      h2 {
+        font-size: $header3;
+        margin-bottom: 0.3rem;
+      }
+      p {
+        font-size: $text;
+        text-align: justify;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
   }
+  table {
+    width: 100%;
+    margin: 0 0 5rem 0;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid #2a3b61;
+    border-collapse: collapse;
+    font-size: $text;
+  }
+  th,
+  td {
+    padding: 15px;
+    text-align: left;
+  }
+  th {
+    background-color: #14264e;
+    color: white;
+  }
+
+  .competitor-research-evaluation {
+    width: 100%;
+    border: 3px solid #2a3b61;
+    padding: 5rem;
+    h1 {
+      font-size: $header1;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: $text;
+    }
+  }
+
   .discover-container {
     @include flex(center, center, column);
     flex-wrap: wrap;

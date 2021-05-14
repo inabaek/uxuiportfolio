@@ -857,7 +857,7 @@ hr {
 }
 
 .define .define-container h1 {
-  font-size: 5.5rem;
+  font-size: 10rem;
   margin-bottom: 5rem;
 }
 
@@ -886,16 +886,47 @@ hr {
 
 /* discover */
 .discover {
-  text-align: center;
   width: 100%;
   margin: 5rem auto 0 auto;
   padding-top: 5rem;
   background: #46629e1e;
+  /* discover - competitor research */
 }
 
 .discover .discover-container {
   width: 80%;
   margin: auto;
+  overflow: hidden;
+}
+
+.discover .discover-heading {
+  margin: 0 auto 5rem auto;
+  font-size: 10rem;
+  text-align: center;
+}
+
+.discover .competitor-research {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 5rem auto;
+}
+
+.discover .competitor-research .competitor-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -909,18 +940,90 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
 }
 
-.discover h1 {
-  margin: 0 auto 5rem auto;
+.discover .competitor-research .competitor-img img {
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.discover .competitor-research .competitor-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+}
+
+.discover .competitor-research .competitor-text h1 {
   font-size: 5.5rem;
+  margin-bottom: 3rem;
 }
 
-.discover h2 {
+.discover .competitor-research .competitor-text h2 {
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+}
+
+.discover .competitor-research .competitor-text p {
+  font-size: 2.3rem;
+  text-align: justify;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.discover table {
+  width: 100%;
+  margin: 0 0 5rem 0;
+}
+
+.discover table,
+.discover th,
+.discover td {
+  border: 1px solid #2a3b61;
+  border-collapse: collapse;
+  font-size: 2.3rem;
+}
+
+.discover th,
+.discover td {
+  padding: 15px;
+  text-align: left;
+}
+
+.discover th {
+  background-color: #14264e;
+  color: white;
+}
+
+.discover .competitor-research-evaluation {
+  width: 100%;
+  border: 3px solid #2a3b61;
+  padding: 5rem;
+}
+
+.discover .competitor-research-evaluation h1 {
   font-size: 4rem;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  margin-bottom: 2rem;
+}
+
+.discover .competitor-research-evaluation p {
+  font-size: 2.3rem;
 }
 
 .discover .discover-container {
