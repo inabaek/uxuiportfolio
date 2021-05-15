@@ -441,10 +441,9 @@ footer h4 {
 
 /* project description */
 .project-description {
-  width: 90%;
+  width: 100%;
   margin: auto;
   background-color: #46629e1e;
-  border-radius: 5rem;
   margin-top: 5rem;
   padding: 10rem 0 10rem 0;
   text-align: center;
