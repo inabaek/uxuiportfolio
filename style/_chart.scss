@@ -1,0 +1,54 @@
+.chart-page {
+  width: 100%;
+  margin: 5rem auto 0 auto;
+  @include flex(center, center, column);
+  flex-wrap: wrap;
+}
+.chart-intro {
+  @include flex(center, center, column);
+  height: 30vh;
+  background: $blue-opacity;
+  width: 100%;
+  margin: auto;
+  h1 {
+    font-size: $header1;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: $header4;
+    margin-bottom: 4rem;
+  }
+}
+
+.chart-boxes {
+  @include flex(center, center, column);
+  width: 100%;
+  overflow: hidden;
+  .chart {
+    margin-top: 10rem;
+  }
+  .chart10 {
+    margin-bottom: 10rem;
+  }
+}
+
+hr {
+  margin-top: 5rem;
+}
+
+.back {
+  @include flex(center, center, column);
+  button {
+    padding: 1rem 3rem;
+    margin-bottom: 5rem;
+    border: 2px solid #46629e;
+    background: none;
+    color: $blue-text;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  button:hover {
+    background: $blue-opacity;
+  }
+}

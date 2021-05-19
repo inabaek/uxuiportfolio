@@ -487,7 +487,6 @@ footer h4 {
   border: 3px solid #46629e;
   width: 60%;
   height: 700px;
-  border-radius: 5rem;
 }
 
 .iframe button {
@@ -662,22 +661,6 @@ footer h4 {
   width: 60%;
   height: 700px;
   background: white;
-  border-radius: 5rem;
-}
-
-.iframe button {
-  margin-top: 2rem;
-  padding: 2rem 5rem;
-  border: 3px #46629e1e solid;
-  border-radius: 2rem;
-  background: none;
-  color: #46629e;
-  font-size: 2.3rem;
-  cursor: pointer;
-}
-
-.iframe button:hover {
-  background: #46629e1e;
 }
 
 /* overview */
@@ -889,6 +872,7 @@ hr {
   margin: 5rem auto 0 auto;
   padding-top: 5rem;
   background: #46629e1e;
+  /* discover - chart */
   /* discover - competitor research */
 }
 
@@ -898,10 +882,78 @@ hr {
   overflow: hidden;
 }
 
-.discover .discover-heading {
-  margin: 0 auto 5rem auto;
-  font-size: 10rem;
-  text-align: center;
+.discover .chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.discover .chart h1 {
+  font-size: 3.5rem;
+}
+
+.discover .chart-front-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  width: 70%;
+}
+
+.discover .chart-front-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.discover .chart-front-img p {
+  font-size: 2.3rem;
+}
+
+.discover .chart-front-img a {
+  color: #46629e;
+}
+
+.discover .chart-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.discover .chart-text h2 {
+  font-size: 2.5rem;
+}
+
+.discover .chart-text p {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.discover .chart-text button {
+  font-size: 1.6rem;
+  color: #46629e;
+  padding: 1rem 3rem;
+  border: 2px solid #46629e;
+  background: none;
+  cursor: pointer;
+}
+
+.discover .chart-text button:hover {
+  background: #46629e1e;
 }
 
 .discover .competitor-research {
@@ -921,7 +973,7 @@ hr {
   margin-top: 10rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
   margin: 5rem auto;
 }
 
@@ -944,6 +996,12 @@ hr {
           flex: 1 1 50rem;
 }
 
+.discover .competitor-research .competitor-img h1 {
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+  width: 70%;
+}
+
 .discover .competitor-research .competitor-img img {
   width: 40%;
   -o-object-fit: cover;
@@ -951,6 +1009,8 @@ hr {
 }
 
 .discover .competitor-research .competitor-text {
+  width: 90%;
+  margin: 5rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -970,42 +1030,48 @@ hr {
 }
 
 .discover .competitor-research .competitor-text h1 {
-  font-size: 5.5rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
 }
 
 .discover .competitor-research .competitor-text h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 0.3rem;
 }
 
 .discover .competitor-research .competitor-text p {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   text-align: justify;
   width: 100%;
   margin-bottom: 2rem;
 }
 
-.discover table {
+.discover .table {
+  width: 90%;
+  margin: auto;
+  overflow-x: auto;
+}
+
+.discover .table table {
   width: 100%;
   margin: 0 0 5rem 0;
 }
 
-.discover table,
-.discover th,
-.discover td {
+.discover .table table,
+.discover .table th,
+.discover .table td {
   border: 1px solid #2a3b61;
   border-collapse: collapse;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
 }
 
-.discover th,
-.discover td {
+.discover .table th,
+.discover .table td {
   padding: 15px;
   text-align: left;
 }
 
-.discover th {
+.discover .table th {
   background-color: #14264e;
   color: white;
 }
@@ -1075,85 +1141,6 @@ hr {
 .discover .hmw p {
   font-size: 2.3rem;
   margin-bottom: 2rem;
-}
-
-/* User flow map */
-.user-flow-map {
-  background: #46629e1e;
-  border-radius: 5rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 90%;
-  margin: 5rem auto 0 auto;
-  overflow: hidden;
-}
-
-.user-flow-map .initial-user-flow {
-  width: 90%;
-  margin: 0 auto 0 auto;
-}
-
-.user-flow-map .initial-user-flow h1 {
-  margin: 3rem 0 2rem 0;
-  font-size: 4rem;
-  text-align: center;
-}
-
-.user-flow-map .initial-user-flow h2 {
-  font-size: 3rem;
-  margin-top: 3rem;
-}
-
-.user-flow-map .initial-user-flow .task-flow {
-  background: khaki;
-  border-radius: 7rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 5rem;
-}
-
-.user-flow-map .initial-user-flow .task-flow h3 {
-  font-size: 2.3rem;
-  margin-top: 2rem;
-  background: #f13d3d;
-  color: khaki;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  border-radius: 2rem;
-}
-
-.user-flow-map .initial-user-flow .option1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 1rem 0 5rem 0;
-}
-
-.user-flow-map .initial-user-flow .option1 h2 {
-  font-size: 1.6rem;
-  margin: 1rem 0 1rem 0;
-  border: 1px #f13d3d solid;
-  padding: 2rem;
-  border-radius: 3rem;
-}
-
-.user-flow-map .initial-user-flow .option1 .arrow {
-  border: none;
 }
 
 @media screen and (max-width: 1113px) {
@@ -1285,5 +1272,116 @@ hr {
   .idea1-1 h1 {
     font-size: 4rem;
   }
+}
+
+.chart-page {
+  width: 100%;
+  margin: 5rem auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.chart-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30vh;
+  background: #46629e1e;
+  width: 100%;
+  margin: auto;
+}
+
+.chart-intro h1 {
+  font-size: 4rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.chart-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.chart-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.chart-boxes .chart {
+  margin-top: 10rem;
+}
+
+.chart-boxes .chart10 {
+  margin-bottom: 10rem;
+}
+
+hr {
+  margin-top: 5rem;
+}
+
+.back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.back button {
+  padding: 1rem 3rem;
+  margin-bottom: 5rem;
+  border: 2px solid #46629e;
+  background: none;
+  color: #46629e;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.back button:hover {
+  background: #46629e1e;
 }
 /*# sourceMappingURL=style.css.map */
