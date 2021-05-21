@@ -869,16 +869,9 @@ hr {
 /* discover */
 .discover {
   width: 100%;
-  margin: 5rem auto 0 auto;
-  padding-top: 5rem;
   background: #46629e1e;
+  padding-top: 5rem;
   /* discover - chart */
-}
-
-.discover .discover-container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
 }
 
 .discover .template {
@@ -903,6 +896,7 @@ hr {
 
 .discover .template h1 {
   font-size: 3.5rem;
+  margin-bottom: 5rem;
 }
 
 .discover .template-front-img {
@@ -910,6 +904,7 @@ hr {
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
   width: 70%;
+  margin: 5rem auto;
 }
 
 .discover .template-front-img img {
@@ -925,6 +920,15 @@ hr {
 
 .discover .template-front-img a {
   color: #46629e;
+}
+
+.discover .persona-img {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (350px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 350px);
+  grid-column-gap: 2rem;
 }
 
 .discover .template-text {
@@ -949,6 +953,7 @@ hr {
   border: 2px solid #46629e;
   background: none;
   cursor: pointer;
+  color: #46629e;
 }
 
 .discover .template-text button:hover {
@@ -959,26 +964,12 @@ hr {
   color: #46629e;
 }
 
-.discover #competitive-section {
+.discover #persona {
   margin-top: 5rem;
 }
 
-.discover .discover-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.discover #competitive-section {
+  margin-top: 5rem;
 }
 
 .discover .img-box {
@@ -1439,6 +1430,133 @@ hr {
 
 hr {
   margin-top: 5rem;
+}
+
+.back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.back button {
+  padding: 1rem 3rem;
+  margin-bottom: 5rem;
+  border: 2px solid #46629e;
+  background: none;
+  color: #46629e;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.back button:hover {
+  background: #46629e1e;
+}
+
+/* discover - competitor research */
+.competitor-page {
+  width: 100%;
+  margin: 5rem auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.competitor-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30vh;
+  background: #46629e1e;
+  width: 100%;
+  margin: auto;
+}
+
+.competitor-intro h1 {
+  font-size: 4rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.competitor-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.competitor-intro p {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  width: 70%;
+  margin: auto;
+}
+
+.persona {
+  width: 80%;
+  margin: 10rem auto;
+}
+
+.persona .img-box {
+  width: 100%;
+}
+
+.persona .persona1 {
+  margin-bottom: 2rem;
+}
+
+.persona .persona2 {
+  margin-bottom: 2rem;
+}
+
+.persona img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.persona .hmw {
+  margin: 5rem;
+  text-align: justify;
+}
+
+.persona .hmw h1 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+
+.persona .hmw p {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
 }
 
 .back {
