@@ -1,0 +1,116 @@
+/* discover - competitor research */
+.competitor-page {
+  width: 100%;
+  margin: 5rem auto 0 auto;
+  @include flex(center, center, column);
+  flex-wrap: wrap;
+}
+.competitor-intro {
+  @include flex(center, center, column);
+  height: 30vh;
+  background: $blue-opacity;
+  width: 100%;
+  margin: auto;
+  h1 {
+    font-size: $header1;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: $header4;
+    margin-bottom: 3rem;
+  }
+  p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    width: 70%;
+    margin: auto;
+  }
+}
+
+.competitor-research {
+  @include flex(center, center, row);
+  margin-top: 10rem;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 5rem auto;
+  .competitor-img {
+    h1 {
+      font-size: $header2;
+      margin-bottom: 5rem;
+      width: 70%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include flex(center, center, column);
+    flex: 1 1 50rem;
+  }
+  .competitor-text {
+    width: 90%;
+    margin: 5rem auto;
+    @include flex(center, flex-start, column);
+    flex: 1 1 40rem;
+    h1 {
+      font-size: $header3;
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: $header4;
+      margin-bottom: 0.3rem;
+    }
+    p {
+      font-size: 1.8rem;
+      text-align: justify;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+}
+.table {
+  width: 80%;
+  margin: 5rem auto 0 auto;
+  overflow-x: auto;
+  table {
+    width: 100%;
+    margin: 0 0 5rem 0;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid #6286d1;
+    border-collapse: collapse;
+    font-size: 1.8rem;
+  }
+  th,
+  td {
+    padding: 15px;
+    text-align: left;
+  }
+  th {
+    background-color: #46629e;
+    color: white;
+  }
+}
+
+hr {
+  margin-top: 5rem;
+}
+
+.back {
+  @include flex(center, center, column);
+  button {
+    padding: 1rem 3rem;
+    margin-bottom: 5rem;
+    border: 2px solid #46629e;
+    background: none;
+    color: $blue-text;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  button:hover {
+    background: $blue-opacity;
+  }
+}

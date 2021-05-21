@@ -169,7 +169,7 @@ hr {
   }
 
   /* discover - chart */
-  .chart {
+  .template {
     @include flex(center, center, row);
     width: 80%;
     margin: auto;
@@ -178,7 +178,7 @@ hr {
       font-size: $header2;
     }
   }
-  .chart-front-img {
+  .template-front-img {
     flex: 1 1 40rem;
     width: 70%;
     img {
@@ -194,18 +194,18 @@ hr {
       color: $blue-text;
     }
   }
-  .chart-text {
+  .template-text {
     flex: 1 1 40rem;
     h2 {
       font-size: $header4;
     }
     p {
       font-size: 1.8rem;
-      margin-bottom: 3rem;
+      margin: 3rem 0;
+      line-height: 1.5;
     }
     button {
       font-size: $small;
-      color: $blue-text;
       padding: 1rem 3rem;
       border: 2px solid #46629e;
       background: none;
@@ -215,85 +215,12 @@ hr {
     button:hover {
       background: $blue-opacity;
     }
-  }
-  /* discover - competitor research */
-  .competitor-research {
-    @include flex(center, center, row);
-    margin-top: 10rem;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 5rem auto;
-    .competitor-img {
-      h1 {
-        font-size: $header2;
-        margin-bottom: 5rem;
-        width: 70%;
-      }
-      img {
-        width: 40%;
-        object-fit: cover;
-      }
-      @include flex(center, center, column);
-      flex: 1 1 50rem;
-    }
-    .competitor-text {
-      width: 90%;
-      margin: 5rem auto;
-      @include flex(center, flex-start, column);
-      flex: 2 1 40rem;
-      h1 {
-        font-size: $header3;
-        margin-bottom: 3rem;
-      }
-      h2 {
-        font-size: $header4;
-        margin-bottom: 0.3rem;
-      }
-      p {
-        font-size: 1.8rem;
-        text-align: justify;
-        width: 100%;
-        margin-bottom: 2rem;
-      }
+    a {
+      color: $blue-text;
     }
   }
-  .table {
-    width: 90%;
-    margin: auto;
-    overflow-x: auto;
-    table {
-      width: 100%;
-      margin: 0 0 5rem 0;
-    }
-    table,
-    th,
-    td {
-      border: 1px solid #2a3b61;
-      border-collapse: collapse;
-      font-size: 1.8rem;
-    }
-    th,
-    td {
-      padding: 15px;
-      text-align: left;
-    }
-    th {
-      background-color: #14264e;
-      color: white;
-    }
-  }
-
-  .competitor-research-evaluation {
-    width: 100%;
-    border: 3px solid #2a3b61;
-    padding: 5rem;
-    h1 {
-      font-size: $header1;
-      margin-bottom: 2rem;
-    }
-    p {
-      font-size: $text;
-    }
+  #competitive-section {
+    margin-top: 5rem;
   }
 
   .discover-container {
