@@ -5,18 +5,27 @@
   background: $blue-opacity;
 
   .project-summery1-box {
+    width: 70%;
+    margin: auto;
     @include flex(center, center, column);
-    padding: 5rem 5rem;
+    padding: 10rem 0rem;
     margin-top: 5rem;
+    text-align: center;
     h1 {
       font-size: $big;
+      margin-bottom: 1rem;
     }
     h2 {
-      font-size: $header4;
+      font-size: $header3;
       margin-bottom: 3rem;
     }
+    h3 {
+      font-size: $header4;
+      margin-bottom: 1rem;
+    }
     p {
-      font-size: 18px;
+      font-size: $text;
+      text-align: justify;
     }
   }
 }
@@ -28,7 +37,7 @@
   @include flex(center, center, column);
   iframe {
     border: 3px solid #46629e1e;
-    width: 60%;
+    width: 20%;
     height: 700px;
     background: white;
   }
@@ -36,17 +45,23 @@
 
 /* overview */
 .overview {
-  width: 80%;
-  margin: 5rem auto 0 auto;
-  padding: 5rem 0;
+  margin: 5rem auto 5rem auto;
+  padding: 5rem 0rem 0rem 0rem;
+}
+.boxes {
+  width: 100%;
+  background: $blue-opacity;
+  padding: 10rem 0;
 }
 .overview-container {
   @include flex(space-between, flex-start, row);
   flex-wrap: wrap;
-  margin: 10rem auto 5rem auto;
+  width: 60%;
+  margin: auto;
 }
 .box {
   margin: 1rem;
+
   h1 {
     font-size: $header4;
   }
@@ -55,8 +70,8 @@
   }
 }
 .below-boxes {
-  width: 70%;
-  margin: auto;
+  width: 60%;
+  margin: 15rem auto;
   h3 {
     font-size: $header4;
     text-align: center;
@@ -70,9 +85,11 @@
   .iframe-overview {
     @include flex(space-around, center, row);
     flex-wrap: wrap;
+
     .gif {
       @include flex(center, center, column);
       overflow: hidden;
+      margin: 5rem 0;
     }
     h1 {
       font-size: 1.8rem;
@@ -81,8 +98,9 @@
     p {
       font-size: $small;
       text-align: justify;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
     }
+
     .introduction {
       p {
         font-size: $text;
@@ -97,59 +115,6 @@ hr {
   margin: auto;
   height: 0.3rem;
   border: none;
-}
-
-/* problem statement */
-.problem-statement {
-  width: 100%;
-  margin: auto;
-  background: $blue-opacity;
-  padding: 10rem 0;
-  .problem-statement-container {
-    width: 70%;
-    margin: auto;
-    h1 {
-      text-align: center;
-      font-size: $big;
-      margin-bottom: 2rem;
-    }
-    p {
-      font-size: $header4;
-      text-align: justify;
-    }
-  }
-}
-
-/* define */
-.define {
-  width: 100%;
-  margin: auto;
-
-  .define-container {
-    @include flex(center, center, column);
-    width: 70%;
-    margin: 5rem auto 5rem auto;
-    padding: 5rem 0rem;
-    overflow: hidden;
-    h1 {
-      font-size: 10rem;
-      margin-bottom: 5rem;
-    }
-    h2 {
-      font-size: $header2;
-      align-self: flex-start;
-      margin: 0 auto 0.5rem auto;
-    }
-    p {
-      margin: 0.5rem auto 0 auto;
-      font-size: $text;
-      align-self: flex-start;
-      text-align: justify;
-    }
-    .define-box {
-      margin-bottom: 3rem;
-    }
-  }
 }
 
 .social-media-giphy {
@@ -203,12 +168,12 @@ hr {
       font-size: $header4;
     }
     p {
-      font-size: 1.8rem;
+      font-size: $text;
       margin: 3rem 0;
       line-height: 1.5;
     }
     button {
-      font-size: $small;
+      font-size: $text;
       padding: 1rem 3rem;
       border: 2px solid #46629e;
       background: none;
@@ -244,16 +209,26 @@ hr {
     height: 100%;
     object-fit: cover;
   }
-  .hmw {
-    margin: 5rem;
-    text-align: justify;
-    h1 {
-      margin-bottom: 2rem;
-      font-size: $header1;
-    }
-    p {
-      font-size: $text;
-      margin-bottom: 2rem;
+}
+
+/* design section */
+.design {
+  width: 100%;
+}
+.lowFi-container {
+  @include flex(center, center, column);
+  flex-wrap: wrap;
+  .lowfi-onboarding {
+    .onboarding-images {
+      @include flex(center, center, row);
+
+      width: 70%;
+      margin: auto;
+      img {
+        width: 30%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }

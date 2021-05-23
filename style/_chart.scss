@@ -6,7 +6,6 @@
 }
 .chart-intro {
   @include flex(center, center, column);
-  height: 30vh;
   background: $blue-opacity;
   width: 100%;
   margin: auto;

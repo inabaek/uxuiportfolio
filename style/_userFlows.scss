@@ -1,11 +1,10 @@
-/* discover - competitor research */
-.persona-page {
+.userFlow-page {
   width: 100%;
   margin: 5rem auto 0 auto;
   @include flex(center, center, column);
   flex-wrap: wrap;
 }
-.persona-intro {
+.userFlow-intro {
   @include flex(center, center, column);
   background: $blue-opacity;
   width: 100%;
@@ -20,16 +19,22 @@
     margin-bottom: 3rem;
   }
   p {
-    font-size: 1.8rem;
+    font-size: $text;
     width: 70%;
     margin: auto;
   }
 }
-.persona {
+.userFlows {
   width: 80%;
   margin: 10rem auto 0 auto;
+  hr {
+    width: 100%;
+    margin: 5rem auto;
+  }
+
   .img-box {
     width: 100%;
+    margin: auto;
   }
   .persona1 {
     margin-bottom: 2rem;
@@ -40,6 +45,18 @@
   img {
     width: 100%;
     object-fit: cover;
+  }
+  .hmw {
+    margin: 5rem;
+    text-align: justify;
+    h1 {
+      margin-bottom: 2rem;
+      font-size: $header1;
+    }
+    p {
+      font-size: $text;
+      margin-bottom: 2rem;
+    }
   }
 }
 

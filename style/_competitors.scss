@@ -7,7 +7,6 @@
 }
 .competitor-intro {
   @include flex(center, center, column);
-  height: 30vh;
   background: $blue-opacity;
   width: 100%;
   margin: auto;
@@ -21,7 +20,7 @@
     margin-bottom: 3rem;
   }
   p {
-    font-size: 1.8rem;
+    font-size: $text;
     margin-bottom: 3rem;
     width: 70%;
     margin: auto;
@@ -62,7 +61,7 @@
       margin-bottom: 0.3rem;
     }
     p {
-      font-size: 1.8rem;
+      font-size: $text;
       text-align: justify;
       width: 100%;
       margin-bottom: 2rem;
@@ -82,7 +81,7 @@
   td {
     border: 1px solid #6286d1;
     border-collapse: collapse;
-    font-size: 1.8rem;
+    font-size: $text;
   }
   th,
   td {
@@ -107,7 +106,7 @@ hr {
     border: 2px solid #46629e;
     background: none;
     color: $blue-text;
-    font-size: 1.8rem;
+    font-size: $text;
     cursor: pointer;
   }
   button:hover {
