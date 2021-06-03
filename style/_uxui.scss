@@ -30,7 +30,7 @@
   }
 }
 
-/* UI */
+/* UI cover */
 .UI-cover {
   overflow: hidden;
   width: 90%;
@@ -38,10 +38,13 @@
   @include flex(space-between, center, row);
   flex-wrap: wrap;
   .UI-iframe {
-    flex: 1 1 40rem;
-    display: flex;
+    @include flex(center, center, row);
 
-    justify-content: center;
+    flex: 1 1 40rem;
+    iframe {
+      width: 90%;
+      object-fit: cover;
+    }
   }
   .UI-img {
     flex: 5 2 40rem;
@@ -83,7 +86,7 @@
   }
 }
 .below-boxes {
-  width: 60%;
+  width: 80%;
   margin: 15rem auto;
   h3 {
     font-size: $header4;
@@ -148,7 +151,6 @@ hr {
     flex-wrap: wrap;
     h1 {
       font-size: $header2;
-      margin-bottom: 5rem;
     }
   }
   .template-front-img {
@@ -169,9 +171,10 @@ hr {
     }
   }
   .persona-img {
+    @include flex(center, center, row);
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-columns: repeat(auto-fill, 300px);
     grid-column-gap: 2rem;
   }
 
@@ -199,6 +202,28 @@ hr {
     }
     a {
       color: $blue-text;
+    }
+  }
+
+  /*hypotheses*/
+  .hypotheses {
+    width: 100%;
+    margin: 5rem auto 0rem auto;
+    background: $blue-text;
+    color: white;
+
+    .hypotheses-container {
+      width: 80%;
+      margin: auto;
+      padding: 10rem 0;
+      h1 {
+        font-size: $header1;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-size: $text;
+        margin-bottom: 1rem;
+      }
     }
   }
   #persona {
@@ -279,7 +304,7 @@ hr {
     @include flex(center, center, row);
     flex: 1 1 40rem;
     iframe {
-      width: 60%;
+      width: 90%;
       object-fit: cover;
     }
   }
@@ -291,6 +316,14 @@ hr {
       height: 100%;
       object-fit: cover;
     }
+  }
+}
+
+/*UI cover*/
+@media screen and (max-width: 888px) {
+  .UI-cover {
+    width: 100%;
+    margin: auto;
   }
 }
 

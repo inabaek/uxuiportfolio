@@ -7,8 +7,10 @@
   padding: 10rem 0 10rem 0;
   text-align: center;
   .description-text {
-    width: 70%;
+    @include flex(center, center, column);
+    width: 80%;
     margin: auto;
+
     h1 {
       font-size: $big;
       margin-bottom: 5rem;
@@ -26,7 +28,7 @@
   margin: 5rem auto 0 auto;
   @include flex(center, center, column);
   iframe {
-    border: 3px solid #46629e;
+    border: 3px solid #1e2c4b1e;
     width: 60%;
     height: 700px;
   }

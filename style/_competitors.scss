@@ -18,12 +18,16 @@
   h2 {
     font-size: $header4;
     margin-bottom: 3rem;
+    text-align: center;
+  }
+  h3 {
+    font-size: 2rem;
   }
   p {
-    font-size: $text;
-    margin-bottom: 3rem;
-    width: 70%;
-    margin: auto;
+    font-size: 1.8rem;
+  }
+  .competitor-intro-text {
+    margin: 0 3rem 0 3rem;
   }
 }
 

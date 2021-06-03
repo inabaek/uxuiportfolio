@@ -3,7 +3,7 @@
   margin: auto;
 }
 .whatisflashideas {
-  margin-bottom: 10rem;
+  margin: 0 3rem 10rem 3rem;
   @include flex(center, center, column);
   h1 {
     text-align: justify;
@@ -63,9 +63,35 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
-  .whatisflashideas h1 {
-    font-size: 4rem;
+@media screen and (max-width: 846px) {
+  .whatisflashideas {
+    margin: 0 2rem 3rem 2rem;
+    h1 {
+      font-size: 3rem;
+      margin: 3rem 0 3rem 0;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+  }
+  .idea1 {
+    .idea1-1 {
+      margin-top: 0;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+    }
+    video {
+      padding: 3rem 0 3rem 0;
+    }
+    .idea1-description {
+      width: 100%;
+    }
   }
 }
 

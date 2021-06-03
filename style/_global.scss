@@ -106,6 +106,12 @@ nav {
   width: 100%;
   margin: 5rem auto 0rem auto;
   background-color: $blue-opacity;
+  h1 {
+    margin: 0 auto 5rem auto;
+    padding-top: 10rem;
+    font-size: $big;
+    text-align: center;
+  }
 
   .uxui-container {
     padding: 5rem 0 10rem 0;
@@ -113,18 +119,12 @@ nav {
     overflow: hidden;
     @include flex(center, center, row);
   }
-  h1 {
-    width: 90%;
-    margin: 0 auto 5rem auto;
-    padding-top: 10rem;
-    font-size: $big;
-    text-align: center;
-  }
 
   .uxui-img {
     margin: 5rem 0 5rem 5rem;
     flex: 1 1 40rem;
     @include flex(center, center, column);
+    width: 10rem;
 
     img {
       width: 100%;
@@ -142,17 +142,13 @@ nav {
     @include flex(center, center, column);
     text-align: justify;
     padding: 5rem;
+
     p {
       font-size: $text;
     }
   }
 }
 
-@media screen and (max-width: 1035px) {
-  .uxui .uxui-img {
-    margin: 5rem 5rem 0 5rem;
-  }
-}
 @media screen and (max-width: 580px) {
   .uxui .uxui-img {
     margin: 1rem 1rem 0 1rem;
@@ -217,6 +213,26 @@ footer h4 {
 /* -------------------------------------------------------------------- */
 /* burger media screen */
 @media screen and (max-width: 846px) {
+  #logo {
+    a {
+      font-size: $header4;
+    }
+  }
+  /* about */
+  #about {
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    width: 100%;
+    .about-text {
+      padding: 2rem 2rem 0 2rem;
+      h1 {
+        font-size: $header4;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
   /* burger Thing */
   .burger {
     position: relative;
@@ -224,7 +240,7 @@ footer h4 {
     cursor: pointer;
   }
   .burger span {
-    padding: 0.2rem 2rem;
+    padding: 0.15rem 1.7rem;
     background: $blue-text;
     margin: 0.5rem 0rem;
     display: block;
@@ -263,6 +279,30 @@ footer h4 {
   .toggle .line3 {
     transform: rotateZ(-45deg) translateY(-300%);
     background: $blue-text;
+  }
+
+  /* ux ui */
+  #uxui {
+    h1 {
+      font-size: $header4;
+      padding-top: 3rem;
+      margin: 0;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+    .uxui-container {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  /* front-end section */
+  #projects {
+    h1 {
+      padding-top: 3rem;
+      font-size: $header4;
+    }
   }
 }
 
