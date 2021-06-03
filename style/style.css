@@ -1213,6 +1213,67 @@ hr {
      object-fit: cover;
 }
 
+/*ipad*/
+@media screen and (max-width: 768px) {
+  .project-summery1 .project-summery1-box {
+    padding: 3rem;
+    margin: 0;
+    width: 100%;
+  }
+  .project-summery1 .project-summery1-box h1 {
+    font-size: 3.5rem;
+  }
+  .project-summery1 .project-summery1-box h2 {
+    font-size: 2.5rem;
+  }
+  .project-summery1 .project-summery1-box h3 {
+    font-size: 2rem;
+  }
+  .project-summery1 .project-summery1-box p {
+    font-size: 1.8rem;
+  }
+  .overview .boxes {
+    padding: 3rem;
+  }
+  .overview .boxes .overview-container {
+    margin: 0;
+    width: 100%;
+  }
+  .overview .boxes .overview-container .box h2 {
+    font-size: 1.6rem;
+  }
+  .below-boxes {
+    margin: 0 auto;
+  }
+  .below-boxes .iframe-overview .gif {
+    margin: 1rem;
+  }
+  .below-boxes .iframe-overview .introduction p {
+    font-size: 1.8rem;
+  }
+  .discover {
+    padding: 0;
+  }
+  .discover .template .template-text p {
+    font-size: 1.8rem;
+  }
+  .discover .template .template-text button {
+    font-size: 1.8rem;
+  }
+  .discover .hypotheses .hypotheses-container {
+    padding: 3rem 0;
+  }
+  .discover .hypotheses .hypotheses-container h1 {
+    font-size: 3.5rem;
+  }
+  .discover .hypotheses .hypotheses-container p {
+    font-size: 1.8rem;
+  }
+  .discover #competitive-section {
+    margin: 0 auto;
+  }
+}
+
 /*UI cover*/
 @media screen and (max-width: 888px) {
   .UI-cover {

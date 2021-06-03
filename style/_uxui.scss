@@ -319,6 +319,82 @@ hr {
   }
 }
 
+/*ipad*/
+@media screen and (max-width: 768px) {
+  .project-summery1 {
+    .project-summery1-box {
+      padding: 3rem;
+      margin: 0;
+      width: 100%;
+      h1 {
+        font-size: $header2;
+      }
+      h2 {
+        font-size: $header4;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .overview {
+    .boxes {
+      padding: 3rem;
+      .overview-container {
+        margin: 0;
+        width: 100%;
+        .box h2 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  .below-boxes {
+    margin: 0 auto;
+    .iframe-overview {
+      .gif {
+        margin: 1rem;
+      }
+      .introduction {
+        p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+
+  .discover {
+    padding: 0;
+    .template {
+      .template-text {
+        p {
+          font-size: 1.8rem;
+        }
+        button {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .hypotheses {
+      .hypotheses-container {
+        padding: 3rem 0;
+        h1 {
+          font-size: $header2;
+        }
+        p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    #competitive-section {
+      margin: 0 auto;
+    }
+  }
+}
 /*UI cover*/
 @media screen and (max-width: 888px) {
   .UI-cover {
