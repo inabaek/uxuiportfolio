@@ -1284,6 +1284,47 @@ hr {
   margin-top: 5rem;
 }
 
+.midFi-container-inner .midFi-wireframe button:hover {
+  background: #46629e1e;
+}
+
+/*1st user-testing*/
+.UserTesting {
+  width: 100%;
+  margin: 0rem auto 0rem auto;
+  background: #46629e;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.UserTesting .usertesting-container {
+  width: 80%;
+  margin: auto;
+  padding: 10rem 0;
+}
+
+.UserTesting .usertesting-container h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.UserTesting .usertesting-container p {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
 /*color-palette*/
 .color-palette {
   width: 80%;
@@ -1399,6 +1440,10 @@ hr {
   margin-top: 5rem;
 }
 
+.hiFi-container-inner .hiFi-wireframe button:hover {
+  background: #46629e1e;
+}
+
 /* finished product */
 .finished-product {
   width: 80%;
@@ -1416,6 +1461,43 @@ hr {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* evaluation */
+.evaluation {
+  width: 100%;
+  margin: 0rem auto 0rem auto;
+  background: #46629e1e;
+  color: #46629e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.evaluation .usertesting-container {
+  width: 80%;
+  margin: auto;
+  padding: 10rem 0;
+}
+
+.evaluation .usertesting-container h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.evaluation .usertesting-container p {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
 }
 
 /*ipad*/
