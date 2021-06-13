@@ -185,8 +185,8 @@ hr {
       line-height: 1.5;
     }
     button {
-      font-size: $text;
-      padding: 1rem 3rem;
+      font-size: 1.8rem;
+      padding: 1rem 5rem;
       border: 2px solid #46629e;
       background: none;
       cursor: pointer;
@@ -315,7 +315,8 @@ hr {
     }
   }
   .midFi-wireframe {
-    @include flex(center, center, row);
+    @include flex(center, flex-start, column);
+    font-size: $text;
     flex: 1 1 40rem;
     img {
       width: 100%;
@@ -323,7 +324,13 @@ hr {
       object-fit: cover;
     }
     button {
+      font-size: 1.8rem;
+      padding: 1rem 5rem;
+      border: 2px solid #46629e;
+      background: none;
       cursor: pointer;
+      color: $blue-text;
+      margin-top: 5rem;
     }
   }
 }
@@ -369,7 +376,8 @@ hr {
     }
   }
   .hiFi-wireframe {
-    @include flex(center, center, row);
+    @include flex(center, flex-start, column);
+    font-size: $text;
     flex: 1 1 40rem;
     img {
       width: 100%;
@@ -377,7 +385,13 @@ hr {
       object-fit: cover;
     }
     button {
+      font-size: 1.8rem;
+      padding: 1rem 5rem;
+      border: 2px solid #46629e;
+      background: none;
       cursor: pointer;
+      color: $blue-text;
+      margin-top: 5rem;
     }
   }
 }

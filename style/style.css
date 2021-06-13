@@ -256,9 +256,9 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -267,8 +267,31 @@ nav {
   padding: 5rem;
 }
 
+.uxui .uxui-text h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.uxui .uxui-text h2 span {
+  font-size: 1.8rem;
+}
+
 .uxui .uxui-text p {
   font-size: 2.3rem;
+}
+
+.uxui .uxui-text button {
+  margin-top: 5rem;
+  padding: 1rem 7rem;
+  font-size: 1.8rem;
+  background: none;
+  border: 2px solid #46629e;
+  color: #46629e;
+  cursor: pointer;
+}
+
+.uxui .uxui-text button:hover {
+  background: #46629e1e;
 }
 
 @media screen and (max-width: 580px) {
@@ -997,8 +1020,8 @@ hr {
 }
 
 .discover .template-text button {
-  font-size: 2.3rem;
-  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  padding: 1rem 5rem;
   border: 2px solid #46629e;
   background: none;
   cursor: pointer;
@@ -1231,13 +1254,14 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2.3rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
@@ -1251,7 +1275,13 @@ hr {
 }
 
 .midFi-container-inner .midFi-wireframe button {
+  font-size: 1.8rem;
+  padding: 1rem 5rem;
+  border: 2px solid #46629e;
+  background: none;
   cursor: pointer;
+  color: #46629e;
+  margin-top: 5rem;
 }
 
 /*color-palette*/
@@ -1339,13 +1369,14 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2.3rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
@@ -1359,7 +1390,13 @@ hr {
 }
 
 .hiFi-container-inner .hiFi-wireframe button {
+  font-size: 1.8rem;
+  padding: 1rem 5rem;
+  border: 2px solid #46629e;
+  background: none;
   cursor: pointer;
+  color: #46629e;
+  margin-top: 5rem;
 }
 
 /* finished product */

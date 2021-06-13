@@ -140,11 +140,30 @@ nav {
   }
   .uxui-text {
     flex: 1 2 48rem;
-    @include flex(center, center, column);
+    @include flex(center, flex-start, column);
     text-align: justify;
     padding: 5rem;
+    h2 {
+      font-size: $header3;
+      margin-bottom: 3rem;
+      span {
+        font-size: 1.8rem;
+      }
+    }
     p {
       font-size: $text;
+    }
+    button {
+      margin-top: 5rem;
+      padding: 1rem 7rem;
+      font-size: 1.8rem;
+      background: none;
+      border: 2px solid #46629e;
+      color: #46629e;
+      cursor: pointer;
+    }
+    button:hover {
+      background: $blue-opacity;
     }
   }
 }
