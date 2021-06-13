@@ -37,7 +37,7 @@ a {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.952);
   z-index: 2;
 }
 
@@ -297,8 +297,9 @@ nav {
 .front-end h2 {
   font-size: 1.6rem;
   font-weight: lighter;
-  color: #46629e;
+  color: white;
   text-align: center;
+  padding: 1.5rem;
 }
 
 .front-end p {
@@ -323,11 +324,16 @@ nav {
 
 .front-end .project-box2 img {
   width: 100%;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
 }
 
 .front-end .project-box2 a {
-  background: #46629e1e;
+  background: #46629e;
   padding-bottom: 1rem;
+  border-radius: 2rem;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
 }
 
 /* -------------------------------------------------------------------- */
@@ -722,7 +728,7 @@ footer h4 {
 /* UI cover */
 .UI-cover {
   overflow: hidden;
-  width: 90%;
+  width: 100%;
   margin: 0 0 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -741,35 +747,13 @@ footer h4 {
       flex-wrap: wrap;
 }
 
-.UI-cover .UI-iframe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-}
-
-.UI-cover .UI-iframe iframe {
-  width: 90%;
+.UI-cover img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .UI-cover .UI-img {
-  -webkit-box-flex: 5;
-      -ms-flex: 5 2 40rem;
-          flex: 5 2 40rem;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -1034,6 +1018,19 @@ hr {
   margin: 5rem auto 0rem auto;
   background: #46629e;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .discover .hypotheses .hypotheses-container {
@@ -1116,6 +1113,15 @@ hr {
   font-size: 3.5rem;
 }
 
+.fidelityTitle .fidelityText h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.fidelityTitle .fidelityText p {
+  font-size: 1.6rem;
+}
+
 .fidelityTitle .lowfi {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1189,9 +1195,11 @@ hr {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
 }
 
-.midFi-container-inner .midFi-iframe {
+.midFi-container-inner .midFi-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1210,7 +1218,7 @@ hr {
           flex: 1 1 40rem;
 }
 
-.midFi-container-inner .midFi-iframe iframe {
+.midFi-container-inner .midFi-img img {
   width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1236,6 +1244,137 @@ hr {
 }
 
 .midFi-container-inner .midFi-wireframe img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.midFi-container-inner .midFi-wireframe button {
+  cursor: pointer;
+}
+
+/*color-palette*/
+.color-palette {
+  width: 80%;
+  margin: 5rem auto;
+  font-size: 2.5rem;
+}
+
+.color-palette h1 {
+  margin-bottom: 3rem;
+}
+
+.color-palette .color-img {
+  width: 70%;
+  margin: auto;
+}
+
+.color-palette .color-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.color-palette .color-img p {
+  font-size: 1.8rem;
+  text-align: justify;
+}
+
+/* high fidelity */
+.fidelityTitle {
+  margin: 5rem 0;
+}
+
+.hiFi-container-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.hiFi-container-inner .hiFi-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.hiFi-container-inner .hiFi-img img {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hiFi-container-inner .hiFi-wireframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.hiFi-container-inner .hiFi-wireframe img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hiFi-container-inner .hiFi-wireframe button {
+  cursor: pointer;
+}
+
+/* finished product */
+.finished-product {
+  width: 80%;
+  margin: 5rem auto;
+  font-size: 2.5rem;
+}
+
+.finished-product .mock-up-img {
+  width: 100%;
+  margin: auto;
+}
+
+.finished-product .mock-up-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1300,6 +1439,10 @@ hr {
   }
   .discover #competitive-section {
     margin: 0 auto;
+  }
+  /*color palette*/
+  .color-palette .color-img {
+    width: 100%;
   }
 }
 
@@ -1953,19 +2096,20 @@ hr {
 
 .userFlow-intro h1 {
   font-size: 4rem;
-  margin-top: 5rem;
+  margin: 5rem 2rem 0 2rem;
   text-align: center;
 }
 
 .userFlow-intro h2 {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
+  font-size: 2.3rem;
+  margin: 0 2rem 3rem 2rem;
+  text-align: center;
 }
 
 .userFlow-intro p {
   font-size: 2.3rem;
-  width: 70%;
-  margin: auto;
+  text-align: center;
+  margin: 0 2rem;
 }
 
 .userFlows {

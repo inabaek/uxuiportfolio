@@ -11,17 +11,18 @@
   margin: auto;
   h1 {
     font-size: $header1;
-    margin-top: 5rem;
+    margin: 5rem 2rem 0 2rem;
     text-align: center;
   }
   h2 {
-    font-size: $header4;
-    margin-bottom: 3rem;
+    font-size: $text;
+    margin: 0 2rem 3rem 2rem;
+    text-align: center;
   }
   p {
     font-size: $text;
-    width: 70%;
-    margin: auto;
+    text-align: center;
+    margin: 0 2rem;
   }
 }
 .userFlows {

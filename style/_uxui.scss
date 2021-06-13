@@ -33,21 +33,17 @@
 /* UI cover */
 .UI-cover {
   overflow: hidden;
-  width: 90%;
+  width: 100%;
   margin: 0 0 0 auto;
   @include flex(space-between, center, row);
   flex-wrap: wrap;
-  .UI-iframe {
-    @include flex(center, center, row);
 
-    flex: 1 1 40rem;
-    iframe {
-      width: 90%;
-      object-fit: cover;
-    }
+  img {
+    width: 100%;
+    object-fit: cover;
   }
+
   .UI-img {
-    flex: 5 2 40rem;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -211,6 +207,7 @@ hr {
     margin: 5rem auto 0rem auto;
     background: $blue-text;
     color: white;
+    @include flex(center, center, row);
 
     .hypotheses-container {
       width: 80%;
@@ -266,6 +263,13 @@ hr {
     h1 {
       font-size: $header2;
     }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: $small;
+    }
   }
   .lowfi {
     @include flex(center, flex-start, row);
@@ -300,10 +304,12 @@ hr {
 .midFi-container-inner {
   @include flex(center, center, row);
   flex-wrap: wrap;
-  .midFi-iframe {
+  width: 80%;
+  margin: auto;
+  .midFi-img {
     @include flex(center, center, row);
     flex: 1 1 40rem;
-    iframe {
+    img {
       width: 90%;
       object-fit: cover;
     }
@@ -316,9 +322,82 @@ hr {
       height: 100%;
       object-fit: cover;
     }
+    button {
+      cursor: pointer;
+    }
   }
 }
 
+/*color-palette*/
+.color-palette {
+  width: 80%;
+  margin: 5rem auto;
+  font-size: $header4;
+  h1 {
+    margin-bottom: 3rem;
+  }
+  .color-img {
+    width: 70%;
+    margin: auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    p {
+      font-size: 1.8rem;
+      text-align: justify;
+    }
+  }
+}
+
+/* high fidelity */
+.fidelityTitle {
+  margin: 5rem 0;
+}
+.hiFi-container-inner {
+  @include flex(center, center, row);
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  .hiFi-img {
+    @include flex(center, center, row);
+    flex: 1 1 40rem;
+    img {
+      width: 90%;
+      object-fit: cover;
+    }
+  }
+  .hiFi-wireframe {
+    @include flex(center, center, row);
+    flex: 1 1 40rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    button {
+      cursor: pointer;
+    }
+  }
+}
+
+/* finished product */
+.finished-product {
+  width: 80%;
+  margin: 5rem auto;
+  font-size: $header4;
+
+  .mock-up-img {
+    width: 100%;
+    margin: auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
 /*ipad*/
 @media screen and (max-width: 768px) {
   .project-summery1 {
@@ -392,6 +471,12 @@ hr {
     }
     #competitive-section {
       margin: 0 auto;
+    }
+  }
+  /*color palette*/
+  .color-palette {
+    .color-img {
+      width: 100%;
     }
   }
 }
