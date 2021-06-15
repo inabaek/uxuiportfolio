@@ -390,22 +390,22 @@ hr {
   margin: 5rem 0;
 }
 .hiFi-container-inner {
-  @include flex(center, center, row);
+  @include flex(center, center, column);
   flex-wrap: wrap;
   width: 80%;
   margin: auto;
   .hiFi-img {
-    @include flex(center, center, row);
-    flex: 1 1 40rem;
+    @include flex(center, center, column);
     img {
-      width: 90%;
+      width: 80%;
+      margin: auto;
       object-fit: cover;
     }
   }
   .hiFi-wireframe {
-    @include flex(center, flex-start, column);
+    @include flex(center, center, column);
     font-size: $text;
-    flex: 1 1 40rem;
+
     img {
       width: 100%;
       height: 100%;
@@ -418,7 +418,6 @@ hr {
       background: none;
       cursor: pointer;
       color: $blue-text;
-      margin-top: 5rem;
     }
     button:hover {
       background: $blue-opacity;
