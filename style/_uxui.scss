@@ -323,17 +323,24 @@ hr {
       height: 100%;
       object-fit: cover;
     }
-    button {
-      font-size: 1.8rem;
-      padding: 1rem 5rem;
-      border: 2px solid #46629e;
-      background: none;
-      cursor: pointer;
-      color: $blue-text;
-      margin-top: 5rem;
+    p {
+      margin-bottom: 3rem;
     }
-    button:hover {
-      background: $blue-opacity;
+    .buttons {
+      @include flex(center, center, row);
+      flex-wrap: wrap;
+      button {
+        font-size: 1.8rem;
+        padding: 1rem 5rem;
+        border: 2px solid #46629e;
+        background: none;
+        cursor: pointer;
+        color: $blue-text;
+        margin: 1rem;
+      }
+      button:hover {
+        background: $blue-opacity;
+      }
     }
   }
 }

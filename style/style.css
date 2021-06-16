@@ -1274,17 +1274,39 @@ hr {
      object-fit: cover;
 }
 
-.midFi-container-inner .midFi-wireframe button {
+.midFi-container-inner .midFi-wireframe p {
+  margin-bottom: 3rem;
+}
+
+.midFi-container-inner .midFi-wireframe .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.midFi-container-inner .midFi-wireframe .buttons button {
   font-size: 1.8rem;
   padding: 1rem 5rem;
   border: 2px solid #46629e;
   background: none;
   cursor: pointer;
   color: #46629e;
-  margin-top: 5rem;
+  margin: 1rem;
 }
 
-.midFi-container-inner .midFi-wireframe button:hover {
+.midFi-container-inner .midFi-wireframe .buttons button:hover {
   background: #46629e1e;
 }
 
