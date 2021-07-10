@@ -101,6 +101,7 @@ nav {
 /* -------------------------------------------------------------------- */
 /* projects */
 /* ux ui section */
+
 .uxui {
   width: 100%;
   margin: 5rem auto 0rem auto;
@@ -115,10 +116,17 @@ nav {
   .uxui-container {
     width: 80%;
     margin: auto;
-    padding: 0 0 3rem 0;
+    padding: 0;
     flex-wrap: wrap;
     overflow: hidden;
     @include flex(center, center, row);
+  }
+
+  .papii {
+    padding: 5rem auto;
+    .papii-img {
+      margin: 5rem 0;
+    }
   }
 
   .uxui-img {
@@ -154,7 +162,7 @@ nav {
       font-size: $text;
     }
     button {
-      margin-top: 5rem;
+      margin: 5rem 0;
       padding: 1rem 7rem;
       font-size: 1.8rem;
       background: none;
