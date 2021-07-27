@@ -2341,12 +2341,12 @@ hr {
      object-fit: cover;
 }
 
-.papii {
+.papii-countdown {
   width: 100%;
   margin: 10rem 0 5rem 0;
 }
 
-.papii .countdown-timer {
+.papii-countdown .countdown-timer {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2356,5 +2356,50 @@ hr {
 
 hr {
   margin: 0;
+}
+
+/* overview */
+.papii_overview {
+  margin: 0 auto 5rem auto;
+  padding: 0 0rem 0rem 0rem;
+}
+
+.overview_contents {
+  width: 100%;
+  background: #46629e1e;
+  padding: 10rem 0;
+}
+
+.overview_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+}
+
+.content {
+  padding: 0 2rem;
+  margin: 1rem;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+}
+
+.content h2 {
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */

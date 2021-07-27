@@ -1,4 +1,4 @@
-.papii {
+.papii-countdown {
   width: 100%;
   margin: 10rem 0 5rem 0;
   .countdown-timer {
@@ -10,4 +10,32 @@
 }
 hr {
   margin: 0;
+}
+
+/* overview */
+.papii_overview {
+  margin: 0 auto 5rem auto;
+  padding: 0 0rem 0rem 0rem;
+}
+.overview_contents {
+  width: 100%;
+  background: $blue-opacity;
+  padding: 10rem 0;
+}
+.overview_container {
+  @include flex(space-between, flex-start, row);
+  flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+}
+.content {
+  padding: 0 2rem;
+  margin: 1rem;
+
+  h1 {
+    font-size: $header4;
+  }
+  h2 {
+    font-size: 18px;
+  }
 }
