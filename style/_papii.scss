@@ -61,3 +61,60 @@ hr {
     font-size: 18px;
   }
 }
+
+/* Research */
+.template01 {
+  @include flex(center, center, row);
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  h1 {
+    font-size: $header2;
+  }
+
+  .template_img {
+    flex: 1 1 40rem;
+    width: 70%;
+    margin: 5rem auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    p {
+      font-size: $text;
+    }
+    a {
+      color: $blue-text;
+    }
+  }
+
+  .template_text {
+    flex: 1 1 40rem;
+    h2 {
+      font-size: $header4;
+    }
+    p {
+      font-size: $text;
+      margin: 3rem 0;
+      line-height: 1.5;
+    }
+    button {
+      font-size: 1.8rem;
+      padding: 1rem 5rem;
+      margin-top: 5rem;
+      border: 2px solid #46629e;
+      background: none;
+      cursor: pointer;
+      color: $blue-text;
+    }
+
+    button:hover {
+      background: $blue-opacity;
+    }
+    a {
+      color: $blue-text;
+    }
+  }
+}
