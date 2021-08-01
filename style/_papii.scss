@@ -63,6 +63,7 @@ hr {
 }
 
 /* Research */
+/* User survey */
 .template01 {
   @include flex(center, center, row);
   width: 80%;
@@ -115,6 +116,54 @@ hr {
     }
     a {
       color: $blue-text;
+    }
+  }
+}
+
+/* persona */
+.template {
+  @include flex(center, center, row);
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  h1 {
+    font-size: $header2;
+  }
+
+  .template-front-img {
+    flex: 1 1 40rem;
+    width: 70%;
+    margin: 5rem auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    p {
+      font-size: $text;
+    }
+    a {
+      color: $blue-text;
+    }
+  }
+  .persona-img {
+    @include flex(center, center, row);
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-column-gap: 2rem;
+  }
+
+  .template-text {
+    flex: 1 1 40rem;
+    h2 {
+      font-size: $header4;
+    }
+    p {
+      font-size: $text;
+      margin: 3rem 0;
+      line-height: 1.5;
     }
   }
 }
