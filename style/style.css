@@ -2362,7 +2362,7 @@ hr {
 
 /* introduce Papii project */
 .introduce_project {
-  width: 80%;
+  width: 60%;
   margin: auto;
 }
 
@@ -2715,5 +2715,20 @@ hr {
   font-size: 2.3rem;
   margin: 3rem 0;
   line-height: 1.5;
+}
+
+/*screen*/
+@media screen and (max-width: 888px) {
+  .introduce_project {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .introduce_project {
+    width: 90%;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
